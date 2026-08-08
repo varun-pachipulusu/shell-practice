@@ -23,8 +23,9 @@ NUMBER=$1
 
 if [ "$NUMBER" -gt 40 ]; then
     echo "The given number: $NUMBER is greater than 40"
+    elif ["$NUMBER" -eq 40]; then
+    echo "The given number: $NUMBER is equal to 40"
    else
     echo "The given number: $NUMBER is less than  40"
-    elif ["$NUMBER" -eq 40]; then
-    echo "The given number: $NUMBER is equal to 40" 
+     
 fi

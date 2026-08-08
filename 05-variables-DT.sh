@@ -12,3 +12,5 @@ end_time=$(date +%s)
 echo "script finished at: $end_time"
 
 TOTAL_TIME=$((end_time - start_time))
+
+echo "Total time taken to execute the script: $TOTAL_TIME"

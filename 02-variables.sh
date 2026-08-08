@@ -1,6 +1,6 @@
 #!/bin/bash
-PERSON1="Pavan"
-PERSON2="Dinesh"
+PERSON1="Sai"
+PERSON2="Varun"
 
 echo "${PERSON1}: Hey ${PERSON2}, are you free this evening?"
 echo "${PERSON2}: Yeah, I’m free. What’s up?"

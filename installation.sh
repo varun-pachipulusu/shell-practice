@@ -1,8 +1,8 @@
 userid =$(id -u)
 
-if [userid -ne 0]
+if [$userid -ne 0]; then
 
-echo "please run the script with root user access"
+ echo "please run the script with root user access"
 
 fi
 

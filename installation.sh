@@ -18,4 +18,4 @@ if [ $? -ne 0 ]; then
 else
     echo "installing nginx is success"
 
-fi    
+fi

@@ -23,19 +23,19 @@ fi
 dnf install mysql -y
 
 if [ $? -ne 0 ]; then
-    echo "installing nginx is failled"
+    echo "installing Mysql is failled"
     exit 1
 else
-    echo "installing nginx is success"
+    echo "installing Mysql is success"
 
 fi
 
 dnf install nodejs -y
 
 if [ $? -ne 0 ]; then
-    echo "installing nginx is failled"
+    echo "installing nodejs is failled"
     exit 1
 else
-    echo "installing nginx is success"
+    echo "installing nodejs is success"
 
 fi

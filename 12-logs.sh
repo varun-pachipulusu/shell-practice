@@ -1,6 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
+LOGS_FOLDER="/var/log/shell-script"
+LOG_FILE="/var/log/shell-script/$0.log"
+
 
 if [ $USERID -ne 0 ]; then
 
@@ -21,14 +24,14 @@ fi
 
 }
 
-dnf install nginx -y
+dnf install nginx -y &>> $LOGS_FILE
 VALIDATE $? "Installing nginx"
 
 
-dnf install mysql -y
+dnf install mysql -y &>> $LOGS_FILE
 VALIDATE $? "Installing Mysql"
 
 
 
-dnf install nodejs -y
+dnf install nodejs -y &>> $LOGS_FILE
 VALIDATE $? "Installing nodejs"

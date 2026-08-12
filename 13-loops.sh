@@ -24,8 +24,8 @@ fi
 
 }
 
-for package in $@
+for package in $@ # sudo sh 13-loops.sh mysql nginx nodejs
 do
-    dnf install $package -y
+    dnf install $package -y &>> $LOGS_FILE
     VALIDATE $? "$package installation"
 done
